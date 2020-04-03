@@ -1,0 +1,27 @@
+﻿<Window x:Class="Wpf_Checkpoint3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_Checkpoint3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#FF3E052C">
+        <Border CornerRadius="10" Margin="10" Background="#FFF5E7E7">
+            <StackPanel Orientation="Vertical" VerticalAlignment="Top">
+                <StackPanel Orientation="Horizontal">
+                    <TextBox x:Name="Filepath_TextBox" Height="20" Width="500" Margin="5 5 5 5" HorizontalAlignment="Left"/>
+                    <Button x:Name="Search_file_btn" Content="Display" Margin="5 5 5 5" Click="Search_file_btn_Click"/>
+                    <Button x:Name="CreateFile_btn" Content="Create New File" Margin="5 5 5 5" Click="CreateFile_btn_Click"/>
+                    <Button x:Name="DeleteFile_btn" Content="Delete File" Margin="5 5 5 5" Click="DeleteFile_btn_Click"/>
+                </StackPanel>
+                <StackPanel>
+                    <ScrollViewer Height = "350" HorizontalScrollBarVisibility = "Auto" 
+                                  VerticalScrollBarVisibility = "Auto" Margin="10,0,0,0">
+                        <TextBlock x:Name="File_TextBlock" Height="355" Width="auto" Background="White" Margin="5 5 5 5"/>
+                    </ScrollViewer>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
